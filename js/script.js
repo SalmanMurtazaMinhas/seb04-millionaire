@@ -1,4 +1,3 @@
-// console.log('okayyyy lesss go')
 const introMusic = document.querySelector('#intro')
 const spinMusic = document.querySelector('#spin')
 const rightAnsMusic = document.querySelector('#right-ans')
