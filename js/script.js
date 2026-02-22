@@ -17,56 +17,79 @@ const ans3 = document.querySelector('.ans3')
 const ans4 = document.querySelector('.ans4')
 
 
-
 const allQuestion = [
-{
-  question : "Express.js is a ____ framework. ",
-  Answers: ["Node.js","JavaScript (js)","ejs","MongoDB"]
-},
-{
-  question : "Which database is not RDBMS database",
-  Answers : ["MYSQL","NoSQL","MongoDB","SQL Server"]
-},
-{
-  question : "Which of the following statement is used to execute the code of the sample.js file?",
-  Answers : ["sample.js","node sample.js","nodejs sample.js","None"]
-},
-{
-  question : "Express.js is written in which of the following language?",
-  Answers : ["HTML","Node","JavaScript","Express"]
-},
-{
-  question : "A car maker makes many different models, but a particular car model is built only by a single car maker. what is the database relationship between car and maker? ",
-  Answers: ["One-to-one","One-to-many","Many-to-many","None"]
-},
-{
-  question : "Which of the following statement is correct? ",
-  Answers: ["JS is Server Side Language","JS is the Client Side Language","JS is both Server Side and Client Side Language","None"]
-},
-{
-  question : "Which of the following command is used to install the Node.js express module?",
-  Answers: ["$ npm install express","$ node install express","$ install express","None"]
-},
-{
-  question : "MongoDB stores documents in _.",
-  Answers: ["Store","Collections","Indexes","None"]
-},
-{
-  question : "Passport is a -------- for Node.js.",
-  Answers: ["Object middleware","Database middleware","Authentication middleware","Transaction middleware"]
-},
-{
-  question : "What is the way to store local variables that can be accessed within the application?",
-  Answers: ["Using Config file","Using database","Using app.locals","Using app.storage"]
-},
-{
-  question : "How to connect to MongoDB using Mongoose?",
-  Answers: ["mongodb.connect()","mongodb.require()","mongoose.connect()","mongoose.require()"]
-},
-{
-  question : "Which of the following shortcut command is used to kill a process in Node.js?",
-  Answers: ["Ctrl + B","Ctrl + V","Ctrl + C","Ctrl + D"]
-}
+  ////////////////////////////// Round 1
+
+    {
+    question : "What is lifting state up?",
+    Answers: ["Moving state to a child component","Removing state","Moving state to a common parent component","Using props instead of state"]
+  },
+  {
+    question : "What is Salmans Favorite saying?",
+    Answers : ["Good Luck guys","I am here to help you","Good Morning, I am so gratefult to be your instructor","six seeeeeven"]
+  },
+  {
+    question : "Which of the following is not a react hook we have seen",
+    Answers: ["useContext","useEffect","useReact","useState"]
+  },
+  ///////////////////////////////// Round 2
+
+   {
+    question : "What is the main advantage of using Context API?",
+    Answers: ["Faster rendering","Avoiding prop drilling","As a complete alternative to useState","To Save a value in the browser"]
+  },
+  {
+    question : "Did Zainab almost drown once?",
+    Answers : ["Yes","No","Maybe","All of the Above"]
+  },
+  {
+    question : "Does Zainab eats tomatos as if they are apples...?",
+    Answers : ["Yes","No","Maybe","All of the Above"]
+  },
+  ///////////////////////////////////////// Round 3
+  {
+    question : "How do you pass data from a parent to a child component?",
+    Answers: ["Using state","Using props","Using hooks","Using context only"]
+  },
+  {
+    question : "How to connect to MongoDB using Mongoose?",
+    Answers: ["mongodb.connect()","mongodb.require()","mongoose.connect()","mongoose.require()"]
+  },
+  {
+    question : "Which package is used for React Routing?",
+    Answers: ["react","react-dom","react-router","routing-react"]
+  },
+  ////////////////////////////////////// Extra Round 4
+  {
+    question : "A car maker makes many different models, but a particular car model is built only by a single car maker. what is the database relationship between car and maker? ",
+    Answers: ["One-to-one","One-to-many","Many-to-many","None"]
+  },
+  {
+    question : "Which of the following command is used to install the Node.js express module?",
+    Answers: ["$ npm install express","$ node install express","$ install express","None"]
+  },
+  // {
+  //   question : "What is the way to store local variables that can be accessed within the application?",
+  //   Answers: ["Using Config file","Using database","Using app.locals","Using app.storage"]
+  // },
+  {
+    question : "Which of the following statement is correct? ",
+    Answers: ["JS is Server Side Language","JS is the Client Side Language","JS is both Server Side and Client Side Language","None"]
+  },
+  //////////////////////////////////////////////// Extra Extra Round 5
+    {
+    question : "MongoDB stores documents in _.",
+    Answers: ["Store","Collections","Indexes","None"]
+  },
+
+  {
+    question : "Which of the following shortcut command is used to kill a process in Node.js?",
+    Answers: ["Ctrl + B","Ctrl + V","Ctrl + C","Ctrl + D"]
+  },
+    {
+    question : "Express.js is written in which of the following language?",
+    Answers : ["HTML","Node","JavaScript","Express"]
+  },
 ]
 
 function resetQuestion() {
@@ -140,7 +163,7 @@ function displayQuestions() {
 
 function checkAns(param, div) {
   let element = document.getElementsByClassName(div);
-  if(param == 'Node.js' || param == 'MongoDB' || param == 'node sample.js' || param == 'JavaScript' || param == 'JS is both Server Side and Client Side Language' || param == 'One-to-many' || param == '$ npm install express' || param == 'Authentication middleware' || param == 'Collections' || param == 'Using app.locals' || param == 'mongoose.connect()' || param == 'Ctrl + C'){
+  if(param == 'Yes' || param == 'Yes' || param == 'useReact' || param == 'to' || param == 'six seeeeeven' || param == 'A JavaScript library for building user interfaces' || param == 'JS is both Server Side and Client Side Language' || param == 'Using props' || param == 'Moving state to a common parent component' || param == 'Avoiding prop drilling' || param == 'react-router' || param == 'Ctrl + C' || param == 'Node.js' || param == 'MongoDB' || param == 'node server.js' || param == 'JavaScript' || param == 'JS is both Server Side and Client Side Language' || param == 'One-to-many' || param == '$ npm install express' || param == 'Authentication middleware' || param == 'Collections' || param == 'Using app.locals' || param == 'mongoose.connect()' || param == 'Ctrl + C' || param == 'npm'){
     element[0].style.backgroundColor = "green";
     wrongAnsMusic.pause()
     wrongAnsMusic.currentTime = 0
@@ -157,7 +180,7 @@ function checkAns(param, div) {
 
   
     let items = [
-        'Sayed Haidar', 'Ahmed', 'Hadi', 'Hakim', 'Sarah',  'Latifa', 'Mahmood', 'Zaid' , 'Abbas', 'Ali', "M. Swar", 'Sayed' , 'Yaseer', 'Pirate King'
+         'Terminal Alligators', 'Lamma' , "Undefined", 'NMAZON' , 'The Merge Warriors', 'Azyai'
     ];
 
     // document.querySelector(".info").textContent = items.join(" ");
